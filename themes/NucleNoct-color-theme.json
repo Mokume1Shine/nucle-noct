@@ -2,22 +2,26 @@
   "name": "NucleNoct",
   "semanticHighlighting": true,
   "colors": {
+    // ワークベンチ全体で共有する基本色。
+    // 前景色、フォーカス、リンク、ウィジェット、ボタン、バッジをここに集約する。
     "foreground": "#C7E2E8",
     "descriptionForeground": "#8CC5D2",
     "errorForeground": "#F6C16D",
     "icon.foreground": "#8CC5D2",
     "focusBorder": "#18B7D8",
     "contrastBorder": "#294854",
-    "selection.background": "#1A5C70AA",
+    "selection.background": "#16576BAA",
     "textLink.foreground": "#63D4EA",
     "textLink.activeForeground": "#B8E3EC",
     "widget.border": "#294854",
     "widget.shadow": "#021E29AA",
     "button.background": "#F7A32E",
     "button.foreground": "#032B3A",
-    "button.hoverBackground": "#FFC05F",
+    "button.hoverBackground": "#E9A64A",
     "badge.background": "#18B7D8",
     "badge.foreground": "#032B3A",
+    // 入力系とピッカー系の面。
+    // フォーム部品は低コントラストな青緑面を使い、フォーカスはシアンで統一する。
     "dropdown.background": "#082B39",
     "dropdown.foreground": "#C7E2E8",
     "dropdown.border": "#294854",
@@ -34,25 +38,27 @@
     "inputValidation.errorBorder": "#F7A32E",
     "inputValidation.warningBackground": "#4D3A1A",
     "inputValidation.warningBorder": "#F7A32E",
-    "list.hoverBackground": "#11465A",
+    "list.hoverBackground": "#0F4254",
     "list.hoverForeground": "#D9EEF2",
-    "list.activeSelectionBackground": "#14546A",
+    "list.activeSelectionBackground": "#155364",
     "list.activeSelectionForeground": "#D9EEF2",
-    "list.inactiveSelectionBackground": "#103D4D",
+    "list.inactiveSelectionBackground": "#0D3948",
     "list.inactiveSelectionForeground": "#B8E3EC",
     "list.highlightForeground": "#63D4EA",
-    "list.focusBackground": "#14546A",
+    "list.focusBackground": "#155364",
     "list.focusForeground": "#D9EEF2",
     "list.focusOutline": "#18B7D8",
     "tree.indentGuidesStroke": "#294854",
     "quickInput.background": "#082B39",
     "quickInput.foreground": "#C7E2E8",
-    "quickInputList.focusBackground": "#14546A",
+    "quickInputList.focusBackground": "#155364",
     "pickerGroup.foreground": "#63D4EA",
     "pickerGroup.border": "#294854",
     "scrollbarSlider.background": "#4E768566",
     "scrollbarSlider.hoverBackground": "#63D4EA66",
     "scrollbarSlider.activeBackground": "#63D4EA88",
+    // ワークベンチの主要フレーム。
+    // Activity Bar、Sidebar、Tab、Title Bar、Panel、Status Bar の骨格を定義する。
     "activityBar.background": "#082331",
     "activityBar.foreground": "#B8E3EC",
     "activityBar.inactiveForeground": "#5E7A85",
@@ -68,6 +74,11 @@
     "editorWidget.background": "#082B39",
     "editorWidget.border": "#294854",
     "editorGroup.border": "#294854",
+    "editorGroup.dropBackground": "#18B7D826",
+    "editorGroup.dropIntoPromptBackground": "#082B39EE",
+    "editorGroup.dropIntoPromptForeground": "#B8E3EC",
+    "editorGroup.dropIntoPromptBorder": "#18B7D8",
+    "editorGroupHeader.border": "#294854",
     "editorGroupHeader.tabsBackground": "#082B39",
     "editorGroupHeader.tabsBorder": "#294854",
     "tab.activeBackground": "#0B3B4C",
@@ -76,7 +87,10 @@
     "tab.inactiveForeground": "#71909A",
     "tab.activeBorderTop": "#F7A32E",
     "tab.border": "#294854",
-    "tab.hoverBackground": "#0A3444",
+    "tab.hoverBackground": "#0D3C4E",
+    "tab.hoverBorder": "#18B7D8",
+    "tab.unfocusedHoverBorder": "#4E7685",
+    "tab.dragAndDropBorder": "#18B7D8",
     "titleBar.activeBackground": "#082331",
     "titleBar.activeForeground": "#C7E2E8",
     "titleBar.inactiveBackground": "#082331",
@@ -97,17 +111,19 @@
     "notifications.border": "#294854",
     "menu.background": "#082B39",
     "menu.foreground": "#C7E2E8",
-    "menu.selectionBackground": "#14546A",
+    "menu.selectionBackground": "#155364",
     "menu.selectionForeground": "#D9EEF2",
     "notificationsErrorIcon.foreground": "#F7A32E",
     "notificationsWarningIcon.foreground": "#F6C16D",
     "notificationsInfoIcon.foreground": "#18B7D8",
+    // エディタ本体とナビゲーション要素。
+    // カーソル、選択、ガター、ハイライト、Diff 表現をまとめて調整しやすくする。
     "editor.background": "#032B3A",
     "editor.foreground": "#C7E2E8",
     "editorCursor.foreground": "#F7A32E",
     "editor.lineHighlightBackground": "#0A3444",
-    "editor.selectionBackground": "#1A5C70AA",
-    "editor.inactiveSelectionBackground": "#144D6080",
+    "editor.selectionBackground": "#16576BAA",
+    "editor.inactiveSelectionBackground": "#12495A80",
     "editor.wordHighlightBackground": "#18B7D81C",
     "editor.wordHighlightStrongBackground": "#F7A32E1F",
     "editor.hoverHighlightBackground": "#18B7D814",
@@ -136,12 +152,14 @@
     "gitDecoration.deletedResourceForeground": "#F7A32E",
     "gitDecoration.untrackedResourceForeground": "#B8E3EC",
     "gitDecoration.ignoredResourceForeground": "#5E7A85",
+    // ターミナル用パレット。
+    // ANSI 色も NucleNoct のシアン/アンバー語彙へ寄せて、別世界に見えないようにする。
     "terminal.background": "#032B3A",
     "terminal.foreground": "#C7E2E8",
     "terminalCursor.foreground": "#F7A32E",
-    "terminal.selectionBackground": "#1A5C70AA",
+    "terminal.selectionBackground": "#16576BAA",
     "terminal.ansiBlack": "#082331",
-    "terminal.ansiRed": "#C98562",
+    "terminal.ansiRed": "#D9894C",
     "terminal.ansiGreen": "#8CC5D2",
     "terminal.ansiYellow": "#F7A32E",
     "terminal.ansiBlue": "#18B7D8",
@@ -149,15 +167,406 @@
     "terminal.ansiCyan": "#8CC5D2",
     "terminal.ansiWhite": "#C7E2E8",
     "terminal.ansiBrightBlack": "#5E7A85",
-    "terminal.ansiBrightRed": "#E4A17C",
+    "terminal.ansiBrightRed": "#F0A766",
     "terminal.ansiBrightGreen": "#B8E3EC",
     "terminal.ansiBrightYellow": "#F6C16D",
     "terminal.ansiBrightBlue": "#63D4EA",
     "terminal.ansiBrightMagenta": "#A9D3DE",
     "terminal.ansiBrightCyan": "#D9EEF2",
-    "terminal.ansiBrightWhite": "#F3FBFD"
+    "terminal.ansiBrightWhite": "#F3FBFD",
+    // 拡張機能を含む副次的な UI 面。
+    // 出現頻度が低いキー群なので、拡張・統合単位でまとまっている方が追いやすい。
+    "charts.green": "#8CC5D2",
+    "charts.purple": "#A9D3DE",
+    "charts.red": "#F7A32E",
+    // Debug 用アイコンとデバッグ式プレビュー。
+    // 進行や状態は寒色、停止・ブレーク・失敗は暖色で役割を分ける。
+    "debugIcon.breakpointCurrentStackframeForeground": "#F6C16D",
+    "debugIcon.breakpointForeground": "#F7A32E",
+    "debugIcon.breakpointStackframeForeground": "#8CC5D2",
+    "debugIcon.continueForeground": "#18B7D8",
+    "debugIcon.disconnectForeground": "#F7A32E",
+    "debugIcon.pauseForeground": "#63D4EA",
+    "debugIcon.restartForeground": "#8CC5D2",
+    "debugIcon.startForeground": "#B8E3EC",
+    "debugIcon.stepBackForeground": "#63D4EA",
+    "debugIcon.stepIntoForeground": "#18B7D8",
+    "debugIcon.stepOutForeground": "#63D4EA",
+    "debugIcon.stepOverForeground": "#18B7D8",
+    "debugIcon.stopForeground": "#F7A32E",
+    "debugTokenExpression.boolean": "#63D4EA",
+    "debugTokenExpression.error": "#F7A32E",
+    "debugTokenExpression.name": "#A9D3DE",
+    "debugTokenExpression.number": "#F6C16D",
+    "debugTokenExpression.string": "#B8E3EC",
+    "debugTokenExpression.type": "#8CC5D2",
+    "debugTokenExpression.value": "#C7E2E899",
+    // 拡張機能由来のインライン診断表示。
+    // Error Lens も既定の赤緑ではなく、テーマ本体の error/info/warning 配色へ揃える。
+    "errorLens.errorForeground": "#F7A32E",
+    "errorLens.errorForegroundLight": "#F7A32E",
+    "errorLens.hintForeground": "#8CC5D2",
+    "errorLens.hintForegroundLight": "#8CC5D2",
+    "errorLens.infoForeground": "#18B7D8",
+    "errorLens.infoForegroundLight": "#18B7D8",
+    "errorLens.warningForeground": "#F6C16D",
+    "errorLens.warningForegroundLight": "#F6C16D",
+    // Source Control、GitHub、GitLens 系の重ね表示。
+    // 成功や open はシアン系、競合・削除・注意喚起はアンバー系で統一する。
+    "gitDecoration.conflictingResourceForeground": "#F7A32E",
+    "gitDecoration.renamedResourceForeground": "#8CC5D2",
+    "gitDecoration.stageDeletedResourceForeground": "#F7A32E",
+    "gitDecoration.stageModifiedResourceForeground": "#F6C16D",
+    "gitDecoration.submoduleResourceForeground": "#A9D3DE",
+    "github.issues.closed": "#6B8791",
+    "gitlens.closedAutolinkedIssueIconColor": "#6B8791",
+    "gitlens.closedPullRequestIconColor": "#6B8791",
+    "gitlens.decorations.branchAheadForegroundColor": "#8CC5D2",
+    "gitlens.decorations.branchBehindForegroundColor": "#F6C16D",
+    "gitlens.decorations.branchDivergedForegroundColor": "#F7A32E",
+    "gitlens.decorations.branchMissingUpstreamForegroundColor": "#F7A32E",
+    "gitlens.decorations.renamedForegroundColor": "#8CC5D2",
+    "gitlens.decorations.statusMergingOrRebasingConflictForegroundColor": "#F7A32E",
+    "gitlens.decorations.statusMergingOrRebasingForegroundColor": "#F6C16D",
+    "gitlens.decorations.workspaceCurrentForegroundColor": "#8CC5D2",
+    "gitlens.decorations.workspaceRepoMissingForegroundColor": "#5E7A85",
+    "gitlens.decorations.workspaceRepoOpenForegroundColor": "#B8E3EC",
+    "gitlens.decorations.worktreeHasUncommittedChangesForegroundColor": "#F6C16D",
+    "gitlens.graphChangesColumnAddedColor": "#8CC5D2",
+    "gitlens.graphChangesColumnDeletedColor": "#F7A32E",
+    "gitlens.graphLane1Color": "#18B7D8",
+    "gitlens.graphLane2Color": "#63D4EA",
+    "gitlens.graphLane3Color": "#A9D3DE",
+    "gitlens.graphLane4Color": "#8CC5D2",
+    "gitlens.graphLane5Color": "#F7A32E",
+    "gitlens.graphLane6Color": "#F6C16D",
+    "gitlens.graphLane7Color": "#FFC05F",
+    "gitlens.graphLane8Color": "#4E7685",
+    "gitlens.graphLane9Color": "#B8E3EC",
+    "gitlens.graphLane10Color": "#6B8791",
+    "gitlens.graphMinimapMarkerHeadColor": "#8CC5D2",
+    "gitlens.graphMinimapMarkerHighlightsColor": "#F6C16D",
+    "gitlens.graphMinimapMarkerLocalBranchesColor": "#18B7D8",
+    "gitlens.graphMinimapMarkerPullRequestsColor": "#F7A32E",
+    "gitlens.graphMinimapMarkerRemoteBranchesColor": "#4E7685",
+    "gitlens.graphMinimapMarkerStashesColor": "#A9D3DE",
+    "gitlens.graphMinimapMarkerTagsColor": "#6B8791",
+    "gitlens.graphMinimapMarkerUpstreamColor": "#B8E3EC",
+    "gitlens.graphScrollMarkerHeadColor": "#8CC5D2",
+    "gitlens.graphScrollMarkerHighlightsColor": "#F6C16D",
+    "gitlens.graphScrollMarkerLocalBranchesColor": "#18B7D8",
+    "gitlens.graphScrollMarkerPullRequestsColor": "#F7A32E",
+    "gitlens.graphScrollMarkerRemoteBranchesColor": "#4E7685",
+    "gitlens.graphScrollMarkerStashesColor": "#A9D3DE",
+    "gitlens.graphScrollMarkerTagsColor": "#6B8791",
+    "gitlens.graphScrollMarkerUpstreamColor": "#B8E3EC",
+    "gitlens.launchpadIndicatorAttentionColor": "#F6C16D",
+    "gitlens.launchpadIndicatorAttentionHoverColor": "#F6C16D",
+    "gitlens.launchpadIndicatorBlockedColor": "#F7A32E",
+    "gitlens.launchpadIndicatorBlockedHoverColor": "#F7A32E",
+    "gitlens.launchpadIndicatorMergeableColor": "#8CC5D2",
+    "gitlens.launchpadIndicatorMergeableHoverColor": "#8CC5D2",
+    "gitlens.mergedPullRequestIconColor": "#A9D3DE",
+    "gitlens.openAutolinkedIssueIconColor": "#8CC5D2",
+    "gitlens.openPullRequestIconColor": "#B8E3EC",
+    "gitlens.unpublishedChangesIconColor": "#8CC5D2",
+    "gitlens.unpublishedCommitIconColor": "#B8E3EC",
+    "gitlens.unpulledChangesIconColor": "#F6C16D",
+    "issues.closed": "#6B8791",
+    "issues.open": "#B8E3EC",
+    "markdownAlert.important.foreground": "#A9D3DE",
+    "markdownAlert.tip.foreground": "#8CC5D2",
+    // マージ支援 UI。
+    // current / incoming は寒色側に寄せ、未解決競合の圧は暖色で表現する。
+    "merge.currentContentBackground": "#8CC5D233",
+    "merge.currentHeaderBackground": "#8CC5D280",
+    "merge.incomingContentBackground": "#18B7D833",
+    "merge.incomingHeaderBackground": "#18B7D880",
+    "mergeEditor.change.background": "#8CC5D233",
+    "mergeEditor.change.word.background": "#8CC5D24D",
+    "mergeEditor.changeBase.background": "#4D3A1A",
+    "mergeEditor.changeBase.word.background": "#F7A32E33",
+    "mergeEditor.conflict.unhandled.minimapOverViewRuler": "#F7A32E",
+    "mergeEditor.conflict.unhandledFocused.border": "#F7A32E",
+    "mergeEditor.conflict.unhandledUnfocused.border": "#F7A32E7A",
+    "mergeEditor.conflictingLines.background": "#F6C16D47",
+    // Problems、Pull Request、SCM グラフ周辺。
+    // SCM グラフは多色を避け、シアン/アンバー/明るい中間色へ圧縮して扱う。
+    "ports.iconRunningProcessForeground": "#F7A32E",
+    "problemsErrorIcon.foreground": "#F7A32E",
+    "pullRequests.closed": "#6B8791",
+    "pullRequests.draft": "#5E7A85",
+    "pullRequests.merged": "#A9D3DE",
+    "pullRequests.notification": "#18B7D8",
+    "pullRequests.open": "#B8E3EC",
+    "scmGraph.foreground1": "#18B7D8",
+    "scmGraph.foreground2": "#63D4EA",
+    "scmGraph.foreground3": "#A9D3DE",
+    "scmGraph.foreground4": "#8CC5D2",
+    "scmGraph.foreground5": "#F7A32E",
+    "scmGraph.historyItemBaseRefColor": "#F7A32E",
+    "scmGraph.historyItemHoverAdditionsForeground": "#8CC5D2",
+    "scmGraph.historyItemHoverDeletionsForeground": "#F7A32E",
+    "scmGraph.historyItemRefColor": "#18B7D8",
+    "scmGraph.historyItemRemoteRefColor": "#A9D3DE",
+    // テスト状態の表示。
+    // Passed / active は寒色、警告はアンバー、skip / unset は意図的に抑えた色にする。
+    "testing.iconErrored": "#F7A32E",
+    "testing.iconErrored.retired": "#F7A32EB3",
+    "testing.iconFailed": "#F7A32E",
+    "testing.iconFailed.retired": "#F7A32EB3",
+    "testing.iconPassed": "#8CC5D2",
+    "testing.iconPassed.retired": "#8CC5D2B3",
+    "testing.iconQueued": "#F6C16D",
+    "testing.iconQueued.retired": "#F6C16DB3",
+    "testing.iconSkipped": "#5E7A85",
+    "testing.iconSkipped.retired": "#5E7A85B3",
+    "testing.iconUnset": "#5E7A85",
+    "testing.iconUnset.retired": "#5E7A85B3",
+    "testing.runAction": "#8CC5D2",
+    // 自動設定候補のうち、既定色が強く残りやすい項目の調整済み参照値。
+    "activityBarTop.activeBorder": "#D9EEF2",
+    "activityBarTop.dropBorder": "#D9EEF2",
+    "activityBarTop.foreground": "#D9EEF2",
+    "activityBarTop.inactiveForeground": "#D9EEF299",
+    "activityErrorBadge.background": "#F7A32E",
+    "activityErrorBadge.foreground": "#032B3A",
+    "activityWarningBadge.background": "#F6C16D",
+    "activityWarningBadge.foreground": "#032B3A",
+    "agentStatusIndicator.background": "#C7E2E80D",
+    "breadcrumb.activeSelectionForeground": "#D9EEF2",
+    "breadcrumb.focusForeground": "#D9EEF2",
+    "chart.axis": "#4E768566",
+    "chart.guide": "#4E768533",
+    "chart.line": "#18B7D8",
+    // Chat UI。
+    // 会話本体は静かな寒色で揃え、ノイズになりやすい追加/削除や shimmer は透明化する。
+    "chat.avatarBackground": "#082331",
+    "chat.checkpointSeparator": "#294854",
+    "chat.editedFileForeground": "#F6C16D",
+    "chat.linesAddedForeground": "#00000000",
+    "chat.linesRemovedForeground": "#00000000",
+    "chat.requestBorder": "#C7E2E81A",
+    "chat.requestCodeBorder": "#18B7D8B8",
+    "chat.slashCommandBackground": "#16576B66",
+    "chat.slashCommandForeground": "#63D4EA",
+    "chat.thinkingShimmer": "#00000000",
+    // 無効状態とコマンド系 UI。
+    // 無効要素は灰青へ寄せ、浮遊 UI は既存面色に馴染ませる。
+    "checkbox.disabled.background": "#4E7685",
+    "checkbox.disabled.foreground": "#6B8791",
+    "commandCenter.activeBackground": "#C7E2E814",
+    "commandCenter.background": "#C7E2E80D",
+    "commentsView.resolvedIcon": "#6B879180",
+    // Debug 補助 UI。
+    // 例外や未検証状態は暖色か弱い灰青で表現し、既定の赤黒感を避ける。
+    "debugExceptionWidget.background": "#4D3A1A",
+    "debugExceptionWidget.border": "#F7A32E",
+    "debugIcon.breakpointDisabledForeground": "#5E7A85",
+    "debugIcon.breakpointUnverifiedForeground": "#5E7A85",
+    "debugToolBar.background": "#082B39",
+    "debugView.exceptionLabelBackground": "#4D3A1A",
+    "debugView.stateLabelBackground": "#6B879144",
+    "debugView.valueChangedHighlight": "#18B7D8",
+    // Diff とエディタ補助表現。
+    // 直接編集対象ではない補助可視化も、シアン/アンバー/灰青の範囲で統一する。
+    "diffEditor.diagonalFill": "#6B879133",
+    "diffEditor.move.border": "#4E76859C",
+    "diffEditor.moveActive.border": "#F7A32E",
+    "diffEditor.unchangedCodeBackground": "#5E7A8529",
+    "diffEditor.unchangedRegionShadow": "#021E29",
+    "disabledForeground": "#6B879180",
+    "editor.compositionBorder": "#D9EEF2",
+    "editor.focusedStackFrameHighlightBackground": "#8CC5D24D",
+    "editor.foldPlaceholderForeground": "#6B8791",
+    "editor.inlineValuesBackground": "#F6C16D33",
+    "editor.inlineValuesForeground": "#D9EEF280",
+    "editor.lineHighlightBorder": "#294854",
+    "editor.linkedEditingBackground": "#F7A32E4D",
+    "editor.placeholder.foreground": "#D9EEF256",
+    "editor.rangeHighlightBackground": "#C7E2E80B",
+    "editor.snippetFinalTabstopHighlightBorder": "#4E7685",
+    "editor.snippetTabstopHighlightBackground": "#4E76854D",
+    "editor.stackFrameHighlightBackground": "#F6C16D33",
+    "editorBracketHighlight.foreground1": "#F6C16D",
+    "editorBracketHighlight.foreground2": "#A9D3DE",
+    "editorBracketHighlight.foreground3": "#18B7D8",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#F7A32ECC",
+    "editorCodeLens.foreground": "#6B8791",
+    "editorCommentsWidget.replyInputBackground": "#082B39",
+    "editorCommentsWidget.resolvedBorder": "#6B879180",
+    "editorGhostText.foreground": "#D9EEF256",
+    "editorGutter.addedSecondaryBackground": "#4E7685",
+    "editorGutter.deletedSecondaryBackground": "#F7A32E",
+    "editorHint.foreground": "#D9EEF2B3",
+    "editorInlayHint.foreground": "#6B8791",
+    "editorInlayHint.parameterForeground": "#6B8791",
+    "editorInlayHint.typeForeground": "#6B8791",
+    "editorLightBulb.foreground": "#F6C16D",
+    "editorLightBulbAi.foreground": "#F6C16D",
+    "editorLightBulbAutoFix.foreground": "#63D4EA",
+    "editorLink.activeForeground": "#63D4EA",
+    "editorOverviewRuler.border": "#4E76854D",
+    "editorOverviewRuler.bracketMatchForeground": "#6B8791",
+    "editorOverviewRuler.commonContentForeground": "#5E7A8566",
+    "editorOverviewRuler.errorForeground": "#F7A32EB3",
+    "editorOverviewRuler.rangeHighlightForeground": "#18B7D899",
+    "editorOverviewRuler.selectionHighlightForeground": "#6B8791CC",
+    "editorOverviewRuler.wordHighlightForeground": "#6B8791CC",
+    "editorOverviewRuler.wordHighlightStrongForeground": "#A9D3DECC",
+    "editorOverviewRuler.wordHighlightTextForeground": "#6B8791CC",
+    "editorRuler.foreground": "#294854",
+    "editorStickyScroll.shadow": "#021E29",
+    // Error Lens 系。
+    // 背景系も前景色と同じ語彙へ揃え、赤緑由来の世界観ズレを防ぐ。
+    "errorLens.errorBackground": "#F7A32E1B",
+    "errorLens.errorBackgroundLight": "#F7A32E20",
+    "errorLens.errorMessageBackground": "#F7A32E19",
+    "errorLens.errorRangeBackground": "#F7A32E19",
+    "errorLens.hintBackground": "#8CC5D220",
+    "errorLens.hintBackgroundLight": "#8CC5D220",
+    "errorLens.hintMessageBackground": "#8CC5D219",
+    "errorLens.hintRangeBackground": "#8CC5D219",
+    "errorLens.infoBackground": "#18B7D820",
+    "errorLens.infoBackgroundLight": "#18B7D820",
+    "errorLens.infoMessageBackground": "#18B7D819",
+    "errorLens.infoRangeBackground": "#18B7D819",
+    "errorLens.statusBarErrorForeground": "#F7A32E",
+    "errorLens.statusBarHintForeground": "#8CC5D2",
+    "errorLens.statusBarIconErrorForeground": "#F7A32E",
+    "errorLens.statusBarIconWarningForeground": "#F6C16D",
+    "errorLens.statusBarInfoForeground": "#18B7D8",
+    "errorLens.statusBarWarningForeground": "#F6C16D",
+    "errorLens.warningBackground": "#F6C16D1B",
+    "errorLens.warningBackgroundLight": "#F6C16D20",
+    "errorLens.warningMessageBackground": "#F6C16D19",
+    "errorLens.warningRangeBackground": "#F6C16D19",
+    "extensionIcon.preReleaseForeground": "#8CC5D2",
+    "extensionIcon.privateForeground": "#D9EEF260",
+    "extensionIcon.sponsorForeground": "#A9D3DE",
+    "extensionIcon.starForeground": "#F7A32E",
+    // Git / GitLens / issue 系。
+    // ガターや補助装飾は主張を抑え、重要イベントだけシアンかアンバーで立てる。
+    "git.blame.editorDecorationForeground": "#6B8791",
+    "gitlens.decorations.worktreeMissingForegroundColor": "#F7A32E",
+    "gitlens.gutterBackgroundColor": "#C7E2E813",
+    "gitlens.gutterForegroundColor": "#6B8791",
+    "gitlens.gutterUncommittedForegroundColor": "#18B7D899",
+    "gitlens.lineHighlightBackgroundColor": "#18B7D833",
+    "gitlens.lineHighlightOverviewRulerColor": "#18B7D899",
+    "gitlens.trailingLineForegroundColor": "#6B879159",
+    "inputOption.hoverBackground": "#4E768580",
+    "interactive.activeCodeBorder": "#18B7D8",
+    "issues.newIssueDecoration": "#D9EEF248",
+    // 汎用リストとラベル UI。
+    // エラー/警告も暖色に寄せ、既定の真っ赤な注意色は避ける。
+    "keybindingLabel.background": "#2948542B",
+    "keybindingLabel.border": "#29485499",
+    "keybindingLabel.bottomBorder": "#29485499",
+    "keybindingLabel.foreground": "#C7E2E8",
+    "list.deemphasizedForeground": "#6B8791",
+    "list.errorForeground": "#F7A32E",
+    "list.invalidItemForeground": "#F6C16D",
+    "list.warningForeground": "#F6C16D",
+    "listFilterWidget.noMatchesOutline": "#F7A32E",
+    "markdown.extension.editor.trailingSpace.background": "#6B879133",
+    "mcpIcon.starForeground": "#F7A32E",
+    "menu.separatorBackground": "#294854",
+    // Merge / minimap / notebook 周辺。
+    // 補助レイヤーの背景は暗い青緑、強調だけを半透明のアクセントで乗せる。
+    "merge.commonContentBackground": "#5E7A8529",
+    "merge.commonHeaderBackground": "#5E7A8566",
+    "mergeEditor.conflict.handled.minimapOverViewRuler": "#6B8791EE",
+    "mergeEditor.conflict.handledFocused.border": "#8CC5D2CC",
+    "mergeEditor.conflict.handledUnfocused.border": "#6B879149",
+    "minimap.errorHighlight": "#F7A32EB3",
+    "multiDiffEditor.headerBackground": "#082331",
+    "notebook.cellStatusBarItemHoverBackground": "#C7E2E826",
+    "notebook.cellToolbarSeparator": "#6B879159",
+    "notebook.symbolHighlightBackground": "#C7E2E80B",
+    "panelSectionHeader.background": "#4E768533",
+    // Peek と Quick Input 補助。
+    // 一時ビューも通常エディタ面の延長として扱い、別テーマに見せない。
+    "peekViewEditor.background": "#032B3A",
+    "peekViewEditor.matchHighlightBackground": "#F7A32E99",
+    "peekViewEditorGutter.background": "#032B3A",
+    "peekViewEditorStickyScroll.background": "#032B3A",
+    "peekViewEditorStickyScrollGutter.background": "#032B3A",
+    "peekViewResult.background": "#082B39",
+    "peekViewResult.fileForeground": "#D9EEF2",
+    "peekViewResult.lineForeground": "#C7E2E8",
+    "peekViewResult.matchHighlightBackground": "#F7A32E4D",
+    "peekViewResult.selectionBackground": "#18B7D833",
+    "peekViewResult.selectionForeground": "#D9EEF2",
+    "peekViewTitle.background": "#082B39",
+    "peekViewTitleDescription.foreground": "#C7E2E8B3",
+    "peekViewTitleLabel.foreground": "#D9EEF2",
+    "profileBadge.background": "#294854",
+    "profileBadge.foreground": "#D9EEF2",
+    "progressBar.background": "#18B7D8",
+    "quickInputTitle.background": "#C7E2E81B",
+    "radio.inactiveHoverBackground": "#4E768580",
+    "simpleFindWidget.sashBorder": "#294854",
+    // Status Bar と Symbol Icon。
+    // 状態色は暖色/寒色の役割を守りつつ、アイコンは型ごとの差が見える程度に抑える。
+    "statusBarItem.activeBackground": "#C7E2E82E",
+    "statusBarItem.compactHoverBackground": "#C7E2E81F",
+    "statusBarItem.errorBackground": "#F7A32E",
+    "statusBarItem.errorForeground": "#032B3A",
+    "statusBarItem.errorHoverBackground": "#C7E2E81F",
+    "statusBarItem.offlineBackground": "#4D3A1A",
+    "statusBarItem.offlineHoverBackground": "#C7E2E81F",
+    "statusBarItem.prominentHoverBackground": "#C7E2E81F",
+    "statusBarItem.warningBackground": "#F6C16D",
+    "statusBarItem.warningForeground": "#032B3A",
+    "symbolIcon.classForeground": "#F7A32E",
+    "symbolIcon.constructorForeground": "#A9D3DE",
+    "symbolIcon.enumeratorForeground": "#F7A32E",
+    "symbolIcon.enumeratorMemberForeground": "#63D4EA",
+    "symbolIcon.eventForeground": "#F7A32E",
+    "symbolIcon.fieldForeground": "#63D4EA",
+    "symbolIcon.functionForeground": "#A9D3DE",
+    "symbolIcon.interfaceForeground": "#63D4EA",
+    "symbolIcon.methodForeground": "#A9D3DE",
+    "symbolIcon.variableForeground": "#63D4EA",
+    // Tab / terminal / testing / text blocks。
+    // 編集中の変化、CLI 補助表示、テスト結果、ドキュメント装飾を最後にまとめる。
+    "tab.activeModifiedBorder": "#18B7D8",
+    "tab.inactiveModifiedBorder": "#18B7D880",
+    "tab.unfocusedActiveModifiedBorder": "#18B7D880",
+    "tab.unfocusedInactiveModifiedBorder": "#18B7D840",
+    "terminal.initialHintForeground": "#D9EEF256",
+    "terminalCommandDecoration.defaultBackground": "#C7E2E840",
+    "terminalCommandDecoration.errorBackground": "#F7A32E",
+    "terminalCommandDecoration.successBackground": "#18B7D8",
+    "terminalOverviewRuler.border": "#4E76854D",
+    "terminalOverviewRuler.cursorForeground": "#6B8791CC",
+    "terminalStickyScrollHover.background": "#082B39",
+    "terminalSymbolIcon.aliasForeground": "#A9D3DE",
+    "terminalSymbolIcon.argumentForeground": "#63D4EA",
+    "terminalSymbolIcon.flagForeground": "#F7A32E",
+    "terminalSymbolIcon.methodForeground": "#A9D3DE",
+    "terminalSymbolIcon.optionForeground": "#F7A32E",
+    "terminalSymbolIcon.optionValueForeground": "#63D4EA",
+    "testing.message.error.badgeBackground": "#F7A32E",
+    "testing.message.error.badgeBorder": "#F7A32E",
+    "testing.message.error.badgeForeground": "#032B3A",
+    "testing.uncoveredBranchBackground": "#4D3A1A",
+    "textBlockQuote.background": "#082331",
+    "textBlockQuote.border": "#18B7D880",
+    "textCodeBlock.background": "#032B3A66",
+    "textPreformat.background": "#C7E2E81A",
+    "textPreformat.foreground": "#F6C16D",
+    "textSeparator.foreground": "#C7E2E82E",
+    "toolbar.activeBackground": "#4E768550",
+    "toolbar.hoverBackground": "#4E768550",
+    "walkThrough.embeddedEditorBackground": "#032B3A66",
+    "walkthrough.stepTitle.foreground": "#D9EEF2",
+    "welcomePage.tileBorder": "#C7E2E81A"
   },
   "tokenColors": [
+    // コメントなどの弱い構文要素。
+    // コメントは消えない程度に後退させるため、柔らかい灰青系で扱う。
     {
       "scope": [
         "comment",
@@ -168,6 +577,8 @@
         "fontStyle": "italic"
       }
     },
+    // 制御構文と言語構造。
+    // キーワードはソース内で数少ない一貫した暖色の支点として扱う。
     {
       "scope": [
         "keyword",
@@ -181,6 +592,8 @@
         "foreground": "#F7A32E"
       }
     },
+    // 演算子と句読点系。
+    // 制御キーワードと混ざらないよう、より明るい寒色で構文の接着剤として見せる。
     {
       "scope": [
         "keyword.operator",
@@ -191,6 +604,8 @@
         "foreground": "#63D4EA"
       }
     },
+    // 型システムと宣言系。
+    // 型に関わる要素は本文とアクセント色の中間に置き、主張しすぎないようにする。
     {
       "scope": [
         "storage.type",
@@ -204,6 +619,8 @@
         "foreground": "#A9D3DE"
       }
     },
+    // 呼び出し可能なシンボル。
+    // 関数は強いシアン、メソッドは少し柔らかい色にして階層差を保つ。
     {
       "scope": [
         "entity.name.function",
@@ -225,6 +642,8 @@
         "foreground": "#63D4EA"
       }
     },
+    // マークアップと値リテラル。
+    // タグやエスケープは暖色、属性・文字列・正規表現は寒色で整理する。
     {
       "scope": [
         "entity.name.tag"
@@ -239,6 +658,25 @@
       ],
       "settings": {
         "foreground": "#8CC5D2"
+      }
+    },
+    // JSON のキー名。
+    // 文字列値と同化しないよう、キーは一段強い青系で分離する。
+    {
+      "scope": [
+        "support.type.property-name.json",
+        "support.type.property-name.jsonc",
+        "meta.object-literal.key.json string.quoted.double.json",
+        "meta.object-literal.key.jsonc string.quoted.double.jsonc",
+        "meta.object.member variable.other.readwrite.json",
+        "meta.object.member variable.other.readwrite.jsonc",
+        "meta.object.member variable.other.property.json",
+        "meta.object.member variable.other.property.jsonc",
+        "meta.mapping.key.json string.quoted",
+        "meta.mapping.key.jsonc string.quoted"
+      ],
+      "settings": {
+        "foreground": "#63D4EA"
       }
     },
     {
@@ -287,6 +725,8 @@
         "foreground": "#F6C16D"
       }
     },
+    // 変数と値の種類。
+    // 通常の値は中立、引数は寒色寄り、定数は暖色寄りで役割差を出す。
     {
       "scope": [
         "variable",
@@ -332,6 +772,8 @@
         "foreground": "#FFC05F"
       }
     },
+    // Markdown の強調と文章要素。
+    // ドキュメント系は配色よりタイポグラフィ差で見せる方針を取る。
     {
       "scope": [
         "markup.heading",
@@ -390,6 +832,8 @@
         "fontStyle": "underline"
       }
     },
+    // 不正値と状態系の疑似トークン。
+    // warning / error も既定の赤紫へ寄せず、アンバー系でテーマ全体の声を保つ。
     {
       "scope": [
         "invalid",
@@ -409,9 +853,35 @@
         "foreground": "#F6C16D",
         "fontStyle": "strikethrough"
       }
+    },
+    {
+      "scope": "token.info-token",
+      "settings": {
+        "foreground": "#18B7D8"
+      }
+    },
+    {
+      "scope": "token.warn-token",
+      "settings": {
+        "foreground": "#F6C16D"
+      }
+    },
+    {
+      "scope": "token.error-token",
+      "settings": {
+        "foreground": "#F7A32E"
+      }
+    },
+    {
+      "scope": "token.debug-token",
+      "settings": {
+        "foreground": "#A9D3DE"
+      }
     }
   ],
   "semanticTokenColors": {
+    // Semantic Highlighting 用のシンボル役割色。
+    // TextMate 側の役割分担と揃え、semantic token だけ浮かないようにする。
     "namespace": "#8CC5D2",
     "class": "#A9D3DE",
     "interface": "#B8E3EC",
@@ -426,6 +896,8 @@
     "variable.readonly": "#F6C16D",
     "variable.defaultLibrary": "#A9D3DE",
     "function.defaultLibrary": "#63D4EA",
+    // Semantic modifier と文字装飾の例外。
+    // 太字の宣言と打ち消し線の deprecated 系だけを装飾ベースの例外として扱う。
     "class.declaration": {
       "foreground": "#D9EEF2",
       "fontStyle": "bold"
