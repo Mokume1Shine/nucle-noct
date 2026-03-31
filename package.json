@@ -1,6 +1,7 @@
 {
   "name": "nucle-noct",
   "displayName": "nucle-noct",
+  "publisher": "sleepy-cat",
   "description": "A deep blue-green dark theme for VS Code with cyan and amber accents.",
   "version": "0.0.1",
   "engines": {
@@ -17,6 +18,10 @@
     "cyan",
     "amber"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mokume1Shine/nucle-noct.git"
+  },
   "icon": "Dream_Disrupter_Light.png",
   "contributes": {
     "themes": [
