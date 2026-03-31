@@ -7,23 +7,23 @@ Nucle Noct は、紺をベースにシアンとアンバーで視線誘導を作
 
 Concept
 
-<img src="https://raw.githubusercontent.com/Mokume1Shine/nucle-noct/master/Dream_Disrupter_Light.png" alt="Nucle Noct concept image" width="520" />
+<img src="./Dream_Disrupter_Light.png" alt="Nucle Noct concept image" width="520" />
 
 JavaScript
 
-<img src="https://raw.githubusercontent.com/Mokume1Shine/nucle-noct/master/JavaScript.png" alt="Nucle Noct JavaScript preview" width="520" />
+<img src="./JavaScript.png" alt="Nucle Noct JavaScript preview" width="520" />
 
 Python
 
-<img src="https://raw.githubusercontent.com/Mokume1Shine/nucle-noct/master/Python.png" alt="Nucle Noct Python preview" width="520" />
+<img src="./Python.png" alt="Nucle Noct Python preview" width="520" />
 
 HTML
 
-<img src="https://raw.githubusercontent.com/Mokume1Shine/nucle-noct/master/HTML.png" alt="Nucle Noct HTML preview" width="520" />
+<img src="./HTML.png" alt="Nucle Noct HTML preview" width="520" />
 
 TOML
 
-<img src="https://raw.githubusercontent.com/Mokume1Shine/nucle-noct/master/TOML.png" alt="Nucle Noct TOML preview" width="520" />
+<img src="./TOML.png" alt="Nucle Noct TOML preview" width="520" />
 
 ## 色の方向性
 

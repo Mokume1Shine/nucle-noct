@@ -22,6 +22,10 @@
     "type": "git",
     "url": "https://github.com/Mokume1Shine/nucle-noct.git"
   },
+  "homepage": "https://github.com/Mokume1Shine/nucle-noct/blob/master/README.md",
+  "bugs": {
+    "url": "https://github.com/Mokume1Shine/nucle-noct/issues"
+  },
   "icon": "Dream_Disrupter_Light.png",
   "contributes": {
     "themes": [
