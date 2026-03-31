@@ -11,19 +11,19 @@ Concept
 
 JavaScript
 
-<img src="./sampleImages/JavaScript.png" alt="Nucle Noct JavaScript preview" width="520" />
+<img src="./JavaScript.png" alt="Nucle Noct JavaScript preview" width="520" />
 
 Python
 
-<img src="./sampleImages/Python.png" alt="Nucle Noct Python preview" width="520" />
+<img src="./Python.png" alt="Nucle Noct Python preview" width="520" />
 
 HTML
 
-<img src="./sampleImages/HTML.png" alt="Nucle Noct HTML preview" width="520" />
+<img src="./HTML.png" alt="Nucle Noct HTML preview" width="520" />
 
 TOML
 
-<img src="./sampleImages/TOML.png" alt="Nucle Noct TOML preview" width="520" />
+<img src="./TOML.png" alt="Nucle Noct TOML preview" width="520" />
 
 ## 色の方向性
 
