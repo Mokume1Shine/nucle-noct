@@ -1,34 +1,34 @@
 /**
- * JavaScript theme test
- * Comments, classes, methods, async/await, objects, arrays, regex, template strings.
+ * NucleNoct preview scene
+ * Dim waterline, quiet signals, async traces, and phosphor-like accents.
  */
 
 const THEME_NAME = "NucleNoct";
 const HEX_COLOR = /^#(?:[0-9a-f]{3}){1,2}$/i;
 
-class PreviewBuilder {
-  #items = [];
+class SignalLantern {
+  #signals = [];
 
   add(key, value, active = true) {
-    this.#items.push({ key, value, active });
+    this.#signals.push({ key, value, active });
     return this;
   }
 
   async render() {
-    const visible = this.#items.filter((item) => item.active);
-    return visible.map((item, index) => `${index}:${item.key}=${item.value}`);
+    const visible = this.#signals.filter((signal) => signal.active);
+    return visible.map((signal, index) => `${index}:${signal.key}=${signal.value}`);
   }
 }
 
 async function main() {
-  const builder = new PreviewBuilder()
+  const lantern = new SignalLantern()
     .add("editor.background", "#002737")
     .add("terminal.ansiMagenta", "#B46CBF")
-    .add("invalid.example", "not-a-color", false);
+    .add("silent.current", "not-a-color", false);
 
-  const lines = await builder.render();
+  const lines = await lantern.render();
   const normalized = lines.map((line) => (HEX_COLOR.test(line) ? line : `${THEME_NAME}:${line}`));
   console.log(normalized.join("\n"));
 }
 
-main().catch((error) => console.error("preview failed", error));
+main().catch((error) => console.error("signal lost", error));

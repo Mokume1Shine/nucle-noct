@@ -1,6 +1,7 @@
 theme = "NucleNoct"
 version = 1
 enabled = true
+profile = "night-watch"
 
 [palette]
 base = "#002737"
@@ -8,6 +9,7 @@ panel = "#0C3444"
 border = "#355C68"
 key = "#00A6C8"
 string = "#E4F4F7"
+glow = "#FE9F2F"
 
 [terminal]
 magenta = "#B46CBF"

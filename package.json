@@ -1,7 +1,7 @@
 {
   "name": "nucle-noct",
   "displayName": "nucle-noct",
-  "description": "",
+  "description": "A deep blue-green dark theme for VS Code with cyan and amber accents.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.110.0"
@@ -9,6 +9,15 @@
   "categories": [
     "Themes"
   ],
+  "keywords": [
+    "theme",
+    "dark theme",
+    "blue",
+    "teal",
+    "cyan",
+    "amber"
+  ],
+  "icon": "Dream_Disrupter_Light.png",
   "contributes": {
     "themes": [
       {

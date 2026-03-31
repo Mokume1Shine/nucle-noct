@@ -21,7 +21,7 @@ func main() {
 
 	for _, token := range tokens {
 		if token.Active && hexColor.MatchString(token.Value) {
-			fmt.Printf("%s => %s\n", token.Key, token.Value)
+			fmt.Printf("night-signal %s => %s\n", token.Key, token.Value)
 		}
 	}
 }
