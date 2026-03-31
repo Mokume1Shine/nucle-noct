@@ -1,0 +1,18 @@
+{
+  "theme": "NucleNoct",
+  "version": 1,
+  "panel": {
+    "background": "#0C3444",
+    "border": "#234551",
+    "title": "Preview"
+  },
+  "commandPalette": {
+    "background": "#143036",
+    "focusBackground": "#04627D",
+    "focusForeground": "#F3FBFD"
+  },
+  "terminal": {
+    "magenta": "#B46CBF",
+    "brightMagenta": "#D59AE0"
+  }
+}

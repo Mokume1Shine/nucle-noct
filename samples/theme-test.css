@@ -1,0 +1,29 @@
+:root {
+  --theme-base: #002737;
+  --theme-panel: #0c3444;
+  --theme-border: #355c68;
+  --theme-key: #00a6c8;
+  --theme-warm: #fe9f2f;
+}
+
+body {
+  margin: 0;
+  color: #c8e0e4;
+  background: var(--theme-base);
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.theme-card {
+  border: 1px solid var(--theme-border);
+  background: var(--theme-panel);
+  box-shadow: 0 12px 24px rgb(0 24 33 / 35%);
+}
+
+.theme-card code,
+.theme-card a:hover {
+  color: var(--theme-key);
+}
+
+.theme-card[data-state="warning"] {
+  border-color: var(--theme-warm);
+}

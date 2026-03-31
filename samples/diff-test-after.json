@@ -1,0 +1,22 @@
+{
+  "theme": "NucleNoct",
+  "version": 2,
+  "panel": {
+    "background": "#082F3E",
+    "border": "#355C68",
+    "title": "Preview Surface",
+    "shadow": "#001821AA"
+  },
+  "commandPalette": {
+    "background": "#143036",
+    "hoverBackground": "#03536A",
+    "focusBackground": "#04627D",
+    "focusForeground": "#F3FBFD",
+    "outline": "#00A6C8"
+  },
+  "terminal": {
+    "magenta": "#B46CBF",
+    "brightMagenta": "#D59AE0",
+    "cursor": "#FE9F2F"
+  }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme name="NucleNoct" mode="signal">
+  <palette>
+    <color key="editor.background">#002737</color>
+    <color key="json.key">#00A6C8</color>
+    <color key="terminal.ansiMagenta">#B46CBF</color>
+    <color key="accent.signal">#FE9F2F</color>
+  </palette>
+</theme>

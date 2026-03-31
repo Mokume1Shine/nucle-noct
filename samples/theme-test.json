@@ -1,0 +1,42 @@
+{
+  "theme": "NucleNoct",
+  "version": 1,
+  "enabled": true,
+  "palette": {
+    "editor.background": "#002737",
+    "editor.foreground": "#C8E0E4",
+    "input.background": "#072A36",
+    "input.border": "#355C68",
+    "json.key": "#00A6C8",
+    "json.string": "#E4F4F7",
+    "accent.signal": "#FE9F2F",
+    "accent.info": "#00A6C8",
+    "accent.frost": "#A2D5DF",
+    "terminal.magenta": "#B46CBF",
+    "terminal.brightMagenta": "#D59AE0"
+  },
+  "states": {
+    "idle": {
+      "label": "quiet",
+      "priority": 0
+    },
+    "hover": {
+      "label": "active preview",
+      "priority": 1
+    },
+    "warning": {
+      "label": "contrast check",
+      "priority": 2
+    }
+  },
+  "messages": [
+    "JSON keys should be clearly separated from string values.",
+    "Text boxes should not melt into the surrounding panel.",
+    "ANSI magenta should read as magenta immediately."
+  ],
+  "regexSamples": {
+    "hexColor": "^#(?:[0-9a-fA-F]{3}){1,2}$",
+    "jsonKey": "\"[a-zA-Z0-9._-]+\"\\s*:"
+  },
+  "flags": [true, false, null]
+}
