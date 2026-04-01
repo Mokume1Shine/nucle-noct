@@ -578,11 +578,12 @@
         "keyword.control",
         "keyword.operator.new",
         "keyword.operator.expression",
-        "storage",
-        "storage.modifier"
+        "storage.modifier",
+        "storage.type.class",
+        "storage.type.function"
       ],
       "settings": {
-        "foreground": "#A2D5DF"
+        "foreground": "#FE9F2F"
       }
     },
     // 演算子と句読点。
@@ -629,7 +630,7 @@
         "support.function.method"
       ],
       "settings": {
-        "foreground": "#7BC7D4"
+        "foreground": "#00B8D6"
       }
     },
     // Java の型名とメンバーアクセス。
@@ -637,9 +638,7 @@
       "scope": [
         "support.class.java",
         "entity.name.type.class.java",
-        "storage.type.class.java",
-        "entity.name.type.record.java",
-        "storage.modifier.record.java"
+        "entity.name.type.record.java"
       ],
       "settings": {
         "foreground": "#D7EDF2"
@@ -670,12 +669,10 @@
       "scope": [
         "entity.name.type.go",
         "support.type.go",
-        "support.class.go",
-        "storage.type.go"
+        "support.class.go"
       ],
       "settings": {
-        "foreground": "#F3FBFD",
-        "fontStyle": "bold"
+        "foreground": "#F3FBFD"
       }
     },
     {
@@ -762,8 +759,7 @@
         "source.sql string.quoted.double"
       ],
       "settings": {
-        "foreground": "#F3FBFD",
-        "fontStyle": "bold"
+        "foreground": "#F3FBFD"
       }
     },
     // Python の型呼び出しとクラス参照。
@@ -771,14 +767,11 @@
       "scope": [
         "support.class.python",
         "entity.name.type.class.python",
-        "meta.function-call.generic.python",
-        "meta.function-call.python entity.name.function",
         "meta.function-call.python support.class",
         "meta.function-call.python entity.name.type"
       ],
       "settings": {
-        "foreground": "#F3FBFD",
-        "fontStyle": "bold"
+        "foreground": "#F3FBFD"
       }
     },
     // マークアップと値リテラル。
@@ -976,6 +969,23 @@
       ],
       "settings": {
         "foreground": "#FEB656"
+      }
+    },
+    // Python の文要素は最優先でアンバーに寄せる。
+    {
+      "scope": [
+        "source.python keyword.control.flow.python",
+        "source.python keyword.control.import.python",
+        "source.python keyword.operator.logical.python",
+        "source.python keyword.operator.wordlike",
+        "source.python storage.modifier.declaration.python",
+        "source.python storage.type.class.python",
+        "source.python storage.type.function.async.python",
+        "source.python storage.type.function.python",
+        "source.python storage.type.function.lambda.python"
+      ],
+      "settings": {
+        "foreground": "#FE9F2F"
       }
     },
     {
@@ -1214,7 +1224,7 @@
     "typeParameter": "#8FBCC6",
     "constructor": "#F3FBFD",
     "function": "#00B8D6",
-    "method": "#7BC7D4",
+    "method": "#00B8D6",
     "property": "#A2D5DF",
     "variable": "#C8E0E4",
     "parameter": "#8FBCC6",
@@ -1224,10 +1234,6 @@
     "variable.defaultLibrary": "#B8E4EB",
     "function.defaultLibrary": "#7BC7D4",
     // Semantic modifier と装飾の例外。
-    "class.declaration": {
-      "foreground": "#F3FBFD",
-      "fontStyle": "bold"
-    },
     "method.deprecated": {
       "foreground": "#FEB656",
       "fontStyle": "strikethrough"
